@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Dark mode toggle and Sign Up button -->
+  <header>
+    <h1>Best Sellers Books</h1>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    <button id="sign-up">Sign Up / Login</button>
+  </header>
+
+  <!-- Category list and book display area -->
+  <aside id="categories">
+    <h2>All Categories</h2>
+    <ul id="category-list"></ul>
+  </aside>
+
+  <main id="book-list">
+    <h2>Books</h2>
+    <div id="books" class="books-container"></div>
+  </main>
+
+  <!-- Book details modal -->
+  <div id="book-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-modal">&times;</span>
+      <div id="book-details"></div>
+    </div>
+  </div>
+
+  <!-- Signup/Login Modal -->
+  <div id="auth-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-auth">&times;</span>
+      <form id="auth-form">
+        <h2>Sign Up / Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
